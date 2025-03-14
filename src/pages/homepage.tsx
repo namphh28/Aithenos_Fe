@@ -121,10 +121,7 @@ export default function Homepage() {
               <span className="landingpage-text-aithenos-gold">Aithenos</span>
             </span>
             <span className="landingpage-text13">
-              Aithenos là hệ sinh thái giáo dục số hóa tiên phong, ứng dụng AI để chuyển hóa giáo án, tạo lộ trình học tập cá nhân hóa, và cung cấp công cụ tương tác thông minh.
-            </span>
-            <span className="landingpage-text14">
-              Dựa trên 4 sứ mệnh: chuyển hóa nội dung giáo dục, tăng cường học tập tự định hướng, khuyến khích đổi mới sáng tạo, và kết nối giáo viên với công nghệ.
+              Aithenos là một hệ sinh thái tiên phong về giáo dục chuyển hóa, sử dụng sức mạnh của AI để mang đến trải nghiệm học tập đột phá cho giáo viên, học sinh, và phụ huynh tại Việt Nam. Với công nghệ tự học thông minh, lộ trình học thích ứng, và tốc độ tăng trưởng học tập vượt trội, chúng tôi giúp trẻ phát triển kỹ năng tự học, tích lũy các kỹ năng thiết yếu cho thế kỷ 21 như tư duy sáng tạo, giải quyết vấn đề, và kỹ năng số.
             </span>
           </div>
           <img
