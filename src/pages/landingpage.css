@@ -1,3 +1,4 @@
+
 /* Reset cơ bản */
 * {
   margin: 0;
@@ -13,7 +14,6 @@
 .container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  gap: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21,14 +21,14 @@
 /* Hero section */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: 0.5fr repeat(9, 1fr);
   margin: 2rem 4rem;
 }
 .item1 {
   grid-column-start: 1 ;
   grid-column-end: 3;
-  height: 16rem;
-  width: 16rem;
+  height: 75%;
+  width: 75%;
   object-fit: contain;
   margin-left: 2rem;
   margin-top: 4rem;
@@ -45,5 +45,25 @@
   padding: 0 1rem;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
 
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .item1,
+  .item2 {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
 
