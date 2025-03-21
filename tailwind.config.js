@@ -54,9 +54,11 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			},
   			'color-1-500': '#704EE7',
+			'color-1-700': '#4C359D',
   			'color-2-500': '#D91656',
   			'color-3-500': '#EE66A6',
   			'color-4-500': '#FFD35E',
+			'color-4-900': '#5C4C22',
   			'color-5': 'hsl(var(--color-5))',
 			'custom-gray-primary': '#C4C4C4',
 			'custom-black-primary': '#281C53'

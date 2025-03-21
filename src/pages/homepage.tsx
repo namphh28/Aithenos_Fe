@@ -2,6 +2,8 @@ import {Header} from "./_components/Header";
 import Footer from "./_components/footer";
 import { Helmet } from 'react-helmet';
 import {ButtonRegisterDefault, ButtonRegisterVariant1} from "../components/ui/buttonRegister";
+import { Text } from "./_components/text";
+import Mission from "./_components/Mission";
 
 //img
 import picture1 from "../assets/picture1.png";
@@ -9,6 +11,7 @@ import picture2 from "../assets/picture2.svg";
 import arrow from "../assets/Arrow_05.svg";
 import highlight from "../assets/Vector.svg";
 import { BsTriangleFill } from "react-icons/bs";
+import picture3 from "../assets/img.svg";
 
 
 // import {motion} from "framer-motion";
@@ -60,10 +63,9 @@ export default function Homepage() {
           </div>
         </section>
         {/* section 2 */}
-        <section id="section2">
+        <section id="section">
           <div className="container">
-            <div className="col-span-4 col-start-2 col-end-10 text-center">
-            <p className="mx-auto my-[2rem] font-extrabold text-color-1-500 text-6xl">Khám Phá Aithenos </p>
+            <p className="title">Khám Phá Aithenos </p>
             <div className="mx-[5%]">
               <div className="border rounded-xl border-solid bg-white border-color-1-500 p-[2rem] mt-[2rem]">
                 <p>Aithenos là một hệ sinh thái tiên phong về giáo dục chuyển hóa, sử dụng sức mạnh của AI để mang đến trải nghiệm học tập đột phá cho giáo viên, học sinh, và phụ huynh tại Việt Nam. Với công nghệ tự học thông minh, lộ trình học thích ứng, và tốc độ tăng trưởng học tập vượt trội, chúng tôi giúp trẻ phát triển kỹ năng tự học, tích lũy các kỹ năng thiết yếu cho thế kỷ 21 như tư duy sáng tạo, giải quyết vấn đề, và kỹ năng số.</p>
@@ -72,59 +74,63 @@ export default function Homepage() {
                 <p>Chúng tôi hướng tới việc trở thành hệ sinh thái giáo dục chuyển hóa tiên phong tại Việt Nam, nơi mọi học sinh và giáo viên có thể tiếp cận các công cụ AI tiên tiến để tự học linh hoạt, thích ứng với nhu cầu cá nhân, và tăng tốc tiến bộ học tập. Aithenos không chỉ định hình tương lai giáo dục mà còn phù hợp với chiến lược phát triển bền vững của Chính phủ Việt Nam.</p>
               </div>
             </div>
-            </div>
           </div>
         </section>
         {/* section 3 */}
-        <section id="section3">
+        <section id="section">
           <div className="container">
-
+            <p className="title">Thông Tư Từ Chính Phủ Việt Nam</p>
+            <div className="flex items-center justify-around">
+            <Text />
+            <img src={picture3} alt="img"/>
+            </div>
           </div>
         </section>
         {/* section 4 */}
-        <section id="section4">
+        <section id="section">
           <div className="container">
-
+            <p className="title">Sứ Mệnh Của Chúng Tôi</p>
+            <Mission />
           </div>
         </section>
         {/* section 5 */}
-        <section id="section5">
+        <section id="section">
           <div className="container">
 
           </div>
         </section>
         {/* section 6 */}
-        <section id="section6">
+        <section id="section">
           <div className="container">
 
           </div>
         </section>
         {/* section 7 - Loan code 7+8+9+10+11+footer */}
-        <section id="section7">
+        <section id="section">
           <div className="container">
 
           </div>
         </section>
         {/* section 8 */}
-        <section id="section8">
+        <section id="section">
           <div className="container">
 
           </div>
         </section>
         {/* section 9 */}
-        <section id="section9">
+        <section id="section">
           <div className="container">
 
           </div>
         </section>
         {/* section 10 */}
-        <section id="section10">
+        <section id="section">
           <div className="container">
 
           </div>
         </section>
         {/* section 11 */}
-        <section id="section11">
+        <section id="section">
           <div className="container">
 
           </div>
