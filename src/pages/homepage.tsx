@@ -1,4 +1,4 @@
-import {Header} from "./_components/Header";
+import { Header } from "./_components/Header";
 import Footer from "./_components/footer";
 import { Helmet } from 'react-helmet';
 import {ButtonRegisterDefault, ButtonRegisterVariant1} from "../components/ui/buttonRegister";
@@ -6,6 +6,11 @@ import { Text } from "./_components/text";
 import Mission from "./_components/Mission";
 import Ecosystem from "./_components/Ecosystem";
 import Feature from "./_components/Feature";
+import { CommentsList } from "./_components/Comments";
+import { Stories } from "./_components/Stories";
+import { Team } from "./_components/Team";
+import TrialSignup from "./_components/TrialSignup";
+import JoinUs from "./_components/JoinUs";
 
 //img
 import picture1 from "../assets/picture1.png";
@@ -14,7 +19,6 @@ import arrow from "../assets/Arrow_05.svg";
 import highlight from "../assets/Vector.svg";
 import { BsTriangleFill } from "react-icons/bs";
 import picture3 from "../assets/img.svg";
-
 
 // import {motion} from "framer-motion";
 import './landingpage.css';
@@ -112,31 +116,35 @@ export default function Homepage() {
         {/* section 7 - Loan code 7+8+9+10+11+footer */}
         <section id="section">
           <div className="container">
-
+            <p className="title">Trải nghiệm Thực Tế Từ Người Dùng</p>
+            <CommentsList />
           </div>
         </section>
         {/* section 8 */}
         <section id="section">
           <div className="container">
-
+            <p className="title">Câu Chuyện Thành Công</p>
+            <Stories />
           </div>
         </section>
         {/* section 9 */}
         <section id="section">
           <div className="container">
-
+            <p className="title">Hội Đồng Cố Vấn</p>
+            <Team />
           </div>
         </section>
         {/* section 10 */}
         <section id="section">
-          <div className="container">
-
+          <div className="container bg-[#F2EAFF] w-screen min-h-screen p-10">
+            <p className="title">Đăng Ký Dùng Thử</p>
+            <TrialSignup />
           </div>
         </section>
         {/* section 11 */}
         <section id="section">
           <div className="container">
-
+            <JoinUs />
           </div>
         </section>
        </main>
