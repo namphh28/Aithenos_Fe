@@ -43,9 +43,9 @@ const Box = [
 
 export default function Mission() {
     return(
-        <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4">
+        <div className=" my-[4rem] grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-[1.5rem]">
             {Box.map((components) => (
-                <div key={components.id} className={`w-full p-[2rem] rounded-3xl ${components.color} ${components.textColor}`}>
+                <div key={components.id} className={`w-full p-[2rem] rounded-3xl transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl ${components.color} ${components.textColor}`}>
                     <img src={components.icon} className='m-auto' />
                     <p className="text-2xl my-4 font-semibold">{components.title}</p>
                     <p className="text-xl font-thin">{components.text}</p>

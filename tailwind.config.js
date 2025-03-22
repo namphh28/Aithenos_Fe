@@ -61,7 +61,9 @@ export default {
 			'color-4-900': '#5C4C22',
   			'color-5': 'hsl(var(--color-5))',
 			'custom-gray-primary': '#C4C4C4',
-			'custom-black-primary': '#281C53'
+			'custom-gray-second': '#F6F6F6',
+			'custom-black-primary': '#281C53',
+			'bg-purple-primary': '#F8F4FF'
   		},
   		animation: {
   			rainbow: 'rainbow var(--speed, 2s) infinite linear',
