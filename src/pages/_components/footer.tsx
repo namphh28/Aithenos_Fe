@@ -1,57 +1,53 @@
-import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import logo2 from "../../assets/logo2.svg";
+import instagramIcon from "../../assets/ig.svg";
+import facebookIcon from "../../assets/fb.svg";
+import twitterIcon from "../../assets/tw.svg";
+import linkedinIcon from "../../assets/lin.svg";
+import { FaPaperPlane } from 'react-icons/fa6';
 
 export default function Footer() {
-  return (
-    <footer className="w-full px-4 py-8 bg-gradient-to-br from-green-50 to-blue-50 text-gray-800">
-      <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Cột 1: Liên kết */}
-        <div className="flex flex-col gap-4">
-          <h3 className="text-lg font-bold text-red-600">Aithenos</h3>
-          <div className="flex flex-col gap-2">
-            <Link to="/about" className="hover:text-blue-600">Về Chúng Tôi</Link>
-            <Link to="/faq" className="hover:text-blue-600">FAQ</Link>
-            <Link to="/contact" className="hover:text-blue-600">Liên Hệ</Link>
-            <Link to="/terms" className="hover:text-blue-600">Điều Khoản</Link>
-            <Link to="/privacy" className="hover:text-blue-600">Chính Sách Bảo Mật</Link>
-          </div>
-        </div>
+    return (
+        <footer className="bg-[#5E42C2] text-white py-10 px-6">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 ml-24">
+                <div className="flex flex-col items-start">
+                    <div className="flex items-center gap-2">
+                        <img src={logo2} alt="Aithenos Logo" className="w-8 h-8" />
+                        <h1 className="text-2xl font-bold">Aithenos</h1>
+                    </div>
+                    <p className="text-sm mt-4 font-light">
+                        Copyright © 2025 Aithenos.<br />
+                        All rights reserved
+                    </p>
 
-        {/* Cột 2: Mạng xã hội */}
-        <div className="flex flex-col gap-4">
-          <h3 className="text-lg font-bold text-red-600">Kết Nối Với Chúng Tôi</h3>
-          <div className="flex gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <Facebook className="w-6 h-6 text-blue-600 hover:text-blue-800" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <Twitter className="w-6 h-6 text-blue-600 hover:text-blue-800" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <Instagram className="w-6 h-6 text-blue-600 hover:text-blue-800" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-6 h-6 text-blue-600 hover:text-blue-800" />
-            </a>
-          </div>
-        </div>
+                    <div className="flex gap-3 mt-4">
+                        <img src={instagramIcon} alt="Instagram" className="w-7 h-7 cursor-pointer hover:opacity-80" />
+                        <img src={facebookIcon} alt="Facebook" className="w-7 h-7 cursor-pointer hover:opacity-80" />
+                        <img src={twitterIcon} alt="Twitter" className="w-7 h-7 cursor-pointer hover:opacity-80" />
+                        <img src={linkedinIcon} alt="LinkedIn" className="w-7 h-7 cursor-pointer hover:opacity-80" />
+                    </div>
+                </div>
 
-        {/* Cột 3: CTA */}
-        <div className="flex flex-col gap-4">
-          <h3 className="text-lg font-bold text-red-600">Tham Gia Ngay</h3>
-          <Link
-            to="#signup"
-            className="inline-block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
-          >
-            Đăng Ký Dùng Thử Miễn Phí
-          </Link>
-        </div>
-      </div>
+                <div className="flex flex-col md:items-start">
+                    <h2 className="font-bold mb-2">Aithenos</h2>
+                    <ul className="flex flex-wrap gap-10 text-sm font-light">
+                        <li className="hover:underline cursor-pointer">Về Chúng Tôi</li>
+                        <li className="hover:underline cursor-pointer">FAQ</li>
+                        <li className="hover:underline cursor-pointer">Liên Hệ</li>
+                        <li className="hover:underline cursor-pointer">Điều Khoản</li>
+                        <li className="hover:underline cursor-pointer">Chính Sách Bảo Mật</li>
+                    </ul>
 
-      {/* Bản quyền */}
-      <div className="mt-8 text-center text-sm text-gray-600">
-        © 2025 Aithenos. All rights reserved.
-      </div>
-    </footer>
-  );
+                    <h2 className="font-bold mt-6">Cập nhật liên tục</h2>
+                    <div className="flex items-center bg-[#704EE7] text-white rounded-lg px-4 py-2 mt-2 w-[280px]">
+                        <input
+                            type="email"
+                            placeholder="Điền địa chỉ email của bạn"
+                            className="bg-transparent outline-none w-full placeholder-white placeholder-opacity-70"
+                        />
+                        <FaPaperPlane className="text-lg cursor-pointer" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
 }
