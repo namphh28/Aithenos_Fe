@@ -3,8 +3,8 @@ import joinus from "../../assets/joinus.svg";
 
 export default function JoinUs() {
     return (
-        <div className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-24">
-            <div className="w-full md:w-3/5">
+        <div className="flex flex-col lg:flex-row items-center gap-10 px-6 lg:px-24">
+            <div className="w-full lg:w-3/5">
                 <img
                     src={joinus}
                     alt="Học tập cùng Aithenos"
@@ -12,7 +12,7 @@ export default function JoinUs() {
                 />
             </div>
 
-            <div className="w-full md:w-2/5 text-left">
+            <div className="w-full lg:w-2/5 text-left">
                 <h2 className="text-3xl font-bold text-[#4C359D] mt-2">
                     Tham Gia Cùng Aithenos Ngay Hôm Nay
                 </h2>
