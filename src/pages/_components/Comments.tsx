@@ -1,3 +1,9 @@
+import img1 from "../../assets/avatar/image24.png"
+import img2 from "../../assets/avatar/image26.png"
+import img3 from "../../assets/avatar/image27.png"
+import img4 from "../../assets/avatar/image28.png"
+import img5 from "../../assets/avatar/image29.png"
+import img6 from "../../assets/avatar/image30.png"
 interface CommentProps {
     text: string;
     author: string;
@@ -26,37 +32,37 @@ export function CommentsList() {
                 text: "Aithenos biến những điều phức tạp thành đơn giản! Một công cụ AI mạnh mẽ nhưng cực kỳ dễ dùng. ;)", 
                 author: "Michael Tran", 
                 role: "CTO @ FutureTech Solutions", 
-                avatar: "https://i.pinimg.com/736x/6c/eb/75/6ceb75052855a7c75e8134396f801f64.jpg"
+                avatar: img1
             },
             {
                 text: "Nhờ Aithenos, chúng tôi đã tăng tỷ lệ chốt khách hàng lên 30% trong 2 tháng. Thật sự không thể thiếu trong quy trình làm việc hàng ngày của chúng tôi.", 
                 author: "Sarah Lee", 
                 role: "Head of Marketing @ GrowthWave", 
-                avatar: "https://i.pinimg.com/736x/6c/eb/75/6ceb75052855a7c75e8134396f801f64.jpg"
+                avatar: img2
             },
             {
                 text: "Aithenos là trợ thủ đắc lực trong công việc của tôi. Nó kết hợp giữa hiệu quả, sáng tạo và chính xác trong từng tính năng.", 
                 author: "David Nguyen", 
                 role: "Founder @ Innovate AI Labs", 
-                avatar: "https://i.pinimg.com/736x/6c/eb/75/6ceb75052855a7c75e8134396f801f64.jpg"
+                avatar: img3
             },
             {
                 text: "Công cụ này đã tối giản hóa quy trình làm việc của tôi một cách đáng kinh ngạc.", 
                 author: "Emily Chan", 
                 role: "Product Manager @ NexaTech", 
-                avatar: "https://i.pinimg.com/736x/6c/eb/75/6ceb75052855a7c75e8134396f801f64.jpg"
+                avatar: img4
             },
             {
                 text: "Sử dụng nền tảng này đã giúp tăng năng suất đội ngũ của chúng tôi lên 40%!", 
                 author: "John Doe", 
                 role: "Operations Lead @ SwiftSolutions", 
-                avatar: "https://i.pinimg.com/736x/6c/eb/75/6ceb75052855a7c75e8134396f801f64.jpg"
+                avatar: img5
             },
             {
                 text: "Một công cụ không thể thiếu trong bộ công cụ công nghệ của chúng tôi. Rất khuyến nghị!", 
                 author: "Lisa Park", 
                 role: "CEO @ DigitalSphere", 
-                avatar: "https://i.pinimg.com/736x/6c/eb/75/6ceb75052855a7c75e8134396f801f64.jpg"
+                avatar: img6
             }
         ];
         
