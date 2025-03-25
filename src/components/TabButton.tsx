@@ -12,7 +12,7 @@ export function TabButtonEcosystem({ action, children, isActive }: TabButtonProp
   return (
     <div
       onClick={() => startTransition(action)}
-      className={`p-[2rem] my-1 text-start text-xl font-semibold rounded-xl cursor-pointer transition-all
+      className={`w-auto lg:w-[30rem] xl:w-[40rem] max-h-screen p-[2rem] my-1 text-start text-xl font-semibold rounded-xl cursor-pointer transition-all
       ${isActive ? "bg-bg-purple-primary text-color-1-700 font-semibold text-xl text-start" : "hover:bg-custom-gray-second"}
       `}
     >
