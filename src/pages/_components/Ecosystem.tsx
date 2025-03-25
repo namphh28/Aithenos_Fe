@@ -19,7 +19,7 @@ export default function Ecosystem() {
         const nextIndex = (currentIndex + 1) % tabs.length;
         return tabs[nextIndex];
       });
-    }, 50000);
+    }, 20000);
     return () => clearInterval(interval);
   }, []);
 
