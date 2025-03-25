@@ -35,8 +35,8 @@ export function Text() {
         <div>
         {Content.map((component) => (
             <li key={component.id} className="list-none flex items-start justify-center ">
-                <img src={icon} className="max-w-[6rem]" />
-                <div className="text-start max-w-[30rem]">
+                <img src={icon} className="max-w-[6rem] hidden sm:block" />
+                <div className="ml-[1.5rem] sm:ml-0 text-start max-w-[30rem]">
                 <p className="pt-5 text-color-1-700 text-2xl font-semibold">{component.title}</p>
                 <p className="py-4 text-lg">{component.text}</p>
                 <a href={component.link} className="max-w-[10rem] flex items-center justify-between text-color-1-500">

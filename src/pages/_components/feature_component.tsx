@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export function TeacherComponent() {
     return(
-        <ul className="my-[4rem] mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+        <ul className="my-[4rem] mx-0 sm:mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
             <li className="border border-custom-gray-primary rounded-xl shadow-lg hover:border-color-1-500">
                 <a  
                 href="/"
@@ -47,7 +47,7 @@ export function TeacherComponent() {
 }
 export function SchoolComponent() {
     return(
-        <ul className="my-[4rem] mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+        <ul className="my-[4rem] mx-0 sm:mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
         <li className="border border-custom-gray-primary rounded-xl shadow-lg hover:border-color-1-500">
             <a  
             href="/"
@@ -93,7 +93,7 @@ export function SchoolComponent() {
 }
 export function StudentComponent() {
     return(
-<ul className="my-[4rem] mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+<ul className="my-[4rem] mx-0 sm:mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
         <li className="border border-custom-gray-primary rounded-xl shadow-lg hover:border-color-1-500">
             <a  
             href="/"
