@@ -21,7 +21,7 @@ import picture2 from "../assets/picture2.svg";
 import arrow from "../assets/Arrow_05.svg";
 import highlight from "../assets/Vector.svg";
 import { BsTriangleFill } from "react-icons/bs";
-import picture3 from "../assets/img.svg";
+import picture3 from "../assets/img.jpg";
 import './landingpage.css';
 
 export default function Homepage() {
@@ -179,13 +179,15 @@ export default function Homepage() {
         </section>
         {/* section 4 */}
         <section id="goverment-section" className="section">
-          <div className="container">
-            <h2 className="title">Thông Tư Từ Chính Phủ Việt Nam</h2>
-            <div className="flex items-center justify-around">
-            <Text />
-            <img src={picture3} alt="img" className="hidden lg:block"/>
+            <div className="container">
+                <h2 className="title text-center text-3xl font-bold mb-6 mb-[2rem]">
+                    Thông Tư Từ Chính Phủ Việt Nam
+                </h2>
+                <div className="flex flex-col items-center justify-center lg:justify-around">
+                    <img src={picture3} alt="img" className=" w-full max-w-[40rem] my-10 rounded-xl" />
+                    <Text />
+                </div>
             </div>
-          </div>
         </section>
         {/* section 5 */}
         <section id="ecosystem-section" className="section">

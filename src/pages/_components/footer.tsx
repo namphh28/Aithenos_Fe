@@ -9,10 +9,9 @@ export default function Footer() {
     return (
         <footer className="bg-[#5E42C2] text-white py-10 px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:ml-20"> 
-                {/* Phần Logo và Social */}
                 <div className="flex flex-col items-start space-y-4">
                     <div className="flex items-center gap-2">
-                        <img src={logo2} alt="Aithenos Logo" className="w-10 h-10" />
+                        <img src={logo2} alt="Aithenos Logo" className="w-8 h-8" />
                         <h1 className="text-2xl font-bold">Aithenos</h1>
                     </div>
                     <p className="text-sm font-light leading-relaxed">
@@ -20,15 +19,14 @@ export default function Footer() {
                         All rights reserved
                     </p>
 
-                    <div className="flex gap-4">
-                        <img src={instagramIcon} alt="Instagram" className="w-6 h-6 cursor-pointer hover:opacity-80" />
-                        <img src={facebookIcon} alt="Facebook" className="w-6 h-6 cursor-pointer hover:opacity-80" />
-                        <img src={twitterIcon} alt="Twitter" className="w-6 h-6 cursor-pointer hover:opacity-80" />
-                        <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6 cursor-pointer hover:opacity-80" />
+                    <div className="flex gap-3 mt-4">
+                        <img src={instagramIcon} alt="Instagram" className="w-7 h-7 cursor-pointer hover:opacity-80" />
+                        <img src={facebookIcon} alt="Facebook" className="w-7 h-7 cursor-pointer hover:opacity-80" />
+                        <img src={twitterIcon} alt="Twitter" className="w-7 h-7 cursor-pointer hover:opacity-80" />
+                        <img src={linkedinIcon} alt="LinkedIn" className="w-7 h-7 cursor-pointer hover:opacity-80" />
                     </div>
                 </div>
 
-                {/* Phần Menu và Đăng ký */}
                 <div className="flex flex-col space-y-6">
                     <div>
                         <h2 className="font-bold mb-2">Aithenos</h2>
