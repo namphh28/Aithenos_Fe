@@ -44,7 +44,7 @@ export function CommentsList() {
                 text: "Aithenos là trợ thủ đắc lực trong công việc của tôi. Nó kết hợp giữa hiệu quả, sáng tạo và chính xác trong từng tính năng.", 
                 author: "David Nguyen", 
                 role: "Founder @ Innovate AI Labs", 
-                avatar: img3
+                avatar: img6
             },
             {
                 text: "Công cụ này đã tối giản hóa quy trình làm việc của tôi một cách đáng kinh ngạc.", 
@@ -62,7 +62,7 @@ export function CommentsList() {
                 text: "Một công cụ không thể thiếu trong bộ công cụ công nghệ của chúng tôi. Rất khuyến nghị!", 
                 author: "Lisa Park", 
                 role: "CEO @ DigitalSphere", 
-                avatar: img6
+                avatar: img3
             }
         ];
         
