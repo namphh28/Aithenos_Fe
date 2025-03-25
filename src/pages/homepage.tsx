@@ -7,7 +7,7 @@ import Mission from "./_components/Mission";
 import Ecosystem from "./_components/Ecosystem";
 import Feature from "./_components/Feature";
 // import JoinUs from "./_components/JoinUs";
-// import { CommentsList } from "./_components/Comments";
+import { CommentsList } from "./_components/Comments";
 import { Stories } from "./_components/Stories";
 import { Team } from "./_components/Team";
 import TrialSignup from "./_components/TrialSignup";
@@ -211,12 +211,12 @@ export default function Homepage() {
           </div>
         </section>
         {/* section 8 */}
-        {/* <section id="section">
+        <section id="comment-section" className="section">
           <div className="container">
             <p className="title">Trải nghiệm Thực Tế Từ Người Dùng</p>
             <CommentsList />
           </div>
-        </section> */}
+        </section>
         {/* section 9 */}
         <section id="adviser-section" className="section">
           <div className="container">
