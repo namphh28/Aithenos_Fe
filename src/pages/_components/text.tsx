@@ -24,7 +24,7 @@ const Content = [
     },
     {
         id:4,
-        title: "Luật cấm dạy thêm",
+        title: "Giới hạn dạy thêm",
         text: "Giảm gánh nặng tài chính và đảm bảo công bằng giáo dục, cần cung cấp lớp bổ trợ miễn phí hoặc tài liệu học tập trực tuyến.",
         link: "https://baochinhphu.vn/bo-gddt-ban-hanh-quy-dinh-moi-ve-day-them-hoc-them-102250103192752482.htm",
     },
@@ -32,20 +32,20 @@ const Content = [
 
 export function Text() {
     return (
-        <div>
-        {Content.map((component) => (
-            <li key={component.id} className="list-none flex items-start justify-center ">
-                <img src={icon} className="max-w-[6rem] hidden sm:block" />
-                <div className="ml-[1.5rem] sm:ml-0 text-start max-w-[30rem]">
-                <p className="pt-5 text-color-1-700 text-2xl font-semibold">{component.title}</p>
-                <p className="py-4 text-lg">{component.text}</p>
-                <a href={component.link} className="max-w-[10rem] flex items-center justify-between text-color-1-500">
-                    <p>Tìm hiểu thêm</p>
-                    <FaCircleArrowUp className="text-xl m-[1rem] rotate-45 hover:rotate-90 hover:delay-150 duration-300  hover:ease-in-out " />
-                </a>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {Content.map((component) => (
+                <div key={component.id} className="flex items-start">
+                    <img src={icon} className="max-w-[6rem] hidden sm:block" alt="icon" />
+                    <div className="ml-4 text-start max-w-[30rem]">
+                        <p className="pt-5 text-color-1-700 text-2xl font-semibold">{component.title}</p>
+                        <p className="py-4 text-lg">{component.text}</p>
+                        <a href={component.link} className="max-w-[10rem] flex items-center justify-between text-color-1-500">
+                            <p>Tìm hiểu thêm</p>
+                            <FaCircleArrowUp className="text-xl m-[1rem] rotate-45 hover:rotate-90 transition-all duration-300" />
+                        </a>
+                    </div>
                 </div>
-            </li>
-        ))}
-    </div>
+            ))}
+        </div>
     );
 }
