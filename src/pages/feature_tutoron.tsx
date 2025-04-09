@@ -24,7 +24,7 @@ function App() {
     setResponse('');
 
     const queryString = new URLSearchParams(formData).toString();
-    const url = `http://127.0.0.1:8000/v1/tutoron?${queryString}`;
+    const url = `${import.meta.env.VITE_API_URL}?${queryString}`;
 
     try {
       const fetchResponse = await fetch(url, {
