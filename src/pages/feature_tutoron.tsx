@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { GraduationCap } from 'lucide-react';
 
-interface TutoronResponse {
-  response: string;
-}
-
 function App() {
   const [formData, setFormData] = useState({
     exercise: '',
