@@ -1,11 +1,11 @@
 import { FaArrowRight } from "react-icons/fa6";
-import { Link } from "react-router-dom"; // Import Link từ react-router-dom
+import { Link } from "react-router-dom";
 
 export function TeacherComponent() {
   return (
     <ul className="my-[4rem] mx-0 sm:mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
       <li className="border border-custom-gray-primary rounded-xl shadow-lg hover:border-color-1-500">
-        <Link to="/feature_tutoron" role="link"> {/* Thay <a> bằng <Link> */}
+        <a href="/" role="link">
           <div className="z-10 text-start w-full flex flex-col items-start justify-start rounded-lg gap-4 p-6 hover:opacity-100 hover:text-color-1-500">
             <span className="text-3xl">💼</span>
             <h3 className="text-xl font-semibold">Tự động hóa công việc hành chính</h3>
@@ -14,12 +14,12 @@ export function TeacherComponent() {
             </p>
             <div className="opacity-0 w-full duration-300 hover:opacity-100">
               <button className="flex items-center justify-between px-4 py-2 bg-color-1-500 text-white rounded-xl gap-2">
-                <p>Chuyển đến Tutoron</p> {/* Thay đổi văn bản */}
+                <p>Thử Ngay</p>
                 <FaArrowRight />
               </button>
             </div>
           </div>
-        </Link>
+        </a> {/* Thêm thẻ đóng </a> */}
       </li>
       <li className="border border-custom-gray-primary rounded-xl shadow-lg hover:border-color-1-500">
         <a href="/" role="link">
@@ -42,7 +42,6 @@ export function TeacherComponent() {
   );
 }
 
-// Các component khác giữ nguyên
 export function SchoolComponent() {
   return (
     <ul className="my-[4rem] mx-0 sm:mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
@@ -88,7 +87,7 @@ export function StudentComponent() {
   return (
     <ul className="my-[4rem] mx-0 sm:mx-[2rem] grid w-full grid-cols-1 gap-6 md:grid-cols-2">
       <li className="border border-custom-gray-primary rounded-xl shadow-lg hover:border-color-1-500">
-        <a href="/" role="link">
+        <Link to="/feature_tutoron" role="link"> {/* Sửa thẻ đóng thành </Link> */}
           <div className="z-10 text-start w-full flex flex-col items-start justify-start shrink-0 overflow-inherit rounded-lg gap-4 p-6 hover:opacity-100 hover:text-color-1-500">
             <span className="text-3xl">🚀</span>
             <h3 className="text-xl font-semibold">Bot phản hồi theo thời gian thực</h3>
@@ -102,7 +101,7 @@ export function StudentComponent() {
               </button>
             </div>
           </div>
-        </a>
+        </Link>
       </li>
       <li className="border border-custom-gray-primary rounded-xl shadow-lg hover:border-color-1-500">
         <a href="/" role="link">
